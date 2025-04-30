@@ -1,0 +1,17 @@
+# Обработка исключений
+
+# базовая обработка
+pes = None                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+
+
+try:
+    x, y = map(int, input().split())
+    res = x / y
+except ZeroDivisionError:
+    print('Деление на ноль')
+except ValueError:
+    print('Неправильно введены данные')
+except Exception as e:
+    print(e)
+
+print(res)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
